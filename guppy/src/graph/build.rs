@@ -325,7 +325,7 @@ impl<'a> GraphBuildState<'a> {
                 repository: package.repository.map(|s| s.into()),
                 homepage: package.homepage.map(|s| s.into()),
                 documentation: package.documentation.map(|s| s.into()),
-                edition: package.edition.into(),
+                edition: package.edition.as_str().into(),
                 metadata_table: package.metadata,
                 links: package.links.map(|s| s.into()),
                 publish: PackagePublishImpl::new(package.publish),
@@ -516,7 +516,7 @@ impl<'a> BuildTargets<'a> {
                     lib_name,
                     required_features: target.required_features,
                     path: target.src_path.into_boxed_path(),
-                    edition: target.edition.into_boxed_str(),
+                    edition: target.edition.as_str().into(),
                     doc_tests: target.doctest,
                 });
             }
