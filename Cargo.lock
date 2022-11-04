@@ -350,12 +350,12 @@ dependencies = [
 
 [[package]]
 name = "cfg-expr"
-version = "0.10.3"
+version = "0.11.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0aacacf4d96c24b2ad6eb8ee6df040e4f27b0d0b39a5710c30091baa830485db"
+checksum = "b0357a6402b295ca3a86bc148e84df46c02e41f41fef186bda662557ef6328aa"
 dependencies = [
  "smallvec",
- "target-lexicon",
+ "target-lexicon 0.12.4 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -2117,6 +2117,11 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c02424087780c9b71cc96799eaeddff35af2bc513278cda5c99fc1f5d026d3c1"
 
 [[package]]
+name = "target-lexicon"
+version = "0.12.4"
+source = "git+https://github.com/arlyon/target-lexicon.git#1d3ca699395f1980828ad19ba72bd792998ee3d9"
+
+[[package]]
 name = "target-spec"
 version = "1.1.0"
 dependencies = [
@@ -2124,7 +2129,7 @@ dependencies = [
  "guppy-workspace-hack",
  "proptest",
  "serde",
- "target-lexicon",
+ "target-lexicon 0.12.4 (git+https://github.com/arlyon/target-lexicon.git)",
  "toml",
 ]
 

@@ -108,6 +108,6 @@ impl fmt::Display for TripleParseError {
 
 impl error::Error for TripleParseError {
     fn source(&self) -> Option<&(dyn error::Error + 'static)> {
-        Some(&self.lexicon_err)
+        None
     }
 }

@@ -171,8 +171,8 @@ impl hash::Hash for Triple {
 
 #[cfg(test)]
 mod tests {
+    use self::target_lexicon::*;
     use super::*;
-    use target_lexicon::*;
 
     #[test]
     fn test_parse() {
