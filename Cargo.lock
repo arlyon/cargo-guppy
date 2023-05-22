@@ -350,12 +350,12 @@ dependencies = [
 
 [[package]]
 name = "cfg-expr"
-version = "0.11.0"
+version = "0.15.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b0357a6402b295ca3a86bc148e84df46c02e41f41fef186bda662557ef6328aa"
+checksum = "c8790cf1286da485c72cf5fc7aeba308438800036ec67d89425924c4807268c9"
 dependencies = [
  "smallvec",
- "target-lexicon 0.12.4 (registry+https://github.com/rust-lang/crates.io-index)",
+ "target-lexicon",
 ]
 
 [[package]]
@@ -2112,14 +2112,9 @@ dependencies = [
 
 [[package]]
 name = "target-lexicon"
-version = "0.12.4"
+version = "0.12.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c02424087780c9b71cc96799eaeddff35af2bc513278cda5c99fc1f5d026d3c1"
-
-[[package]]
-name = "target-lexicon"
-version = "0.12.4"
-source = "git+https://github.com/arlyon/target-lexicon.git#1d3ca699395f1980828ad19ba72bd792998ee3d9"
+checksum = "fd1ba337640d60c3e96bc6f0638a939b9c9a7f2c316a1598c279828b3d1dc8c5"
 
 [[package]]
 name = "target-spec"
@@ -2129,7 +2124,7 @@ dependencies = [
  "guppy-workspace-hack",
  "proptest",
  "serde",
- "target-lexicon 0.12.4 (git+https://github.com/arlyon/target-lexicon.git)",
+ "target-lexicon",
  "toml",
 ]
 
